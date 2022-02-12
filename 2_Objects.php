@@ -76,3 +76,11 @@ var_dump($acme);
 var_dump($acme->members());
 
 
+// extra
+
+$member_names = array_column($acme->members(), 'name');
+
+var_dump($member_names);
+
+
+
