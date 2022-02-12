@@ -24,7 +24,7 @@ class SpecialCoffeeMaker extends Coffeemaker
 
 
 // ********** ********** **********
-// ********** PART II **********
+// **********   PART II  **********
 // ********** ********** **********
 
 
@@ -80,8 +80,9 @@ $collection = new VideoCollection([
 var_dump($collection->length());
 
 
-
-
+// ********** ********** **********
+// **********  PART III  **********
+// ********** ********** **********
 
 
 
