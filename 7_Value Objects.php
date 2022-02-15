@@ -68,5 +68,36 @@ register("John Doe", $newAge);
 
 
 
+// ********** ********** **********
+// ********** Combining variables  **********
+// ********** ********** **********
+
+
+class Coordinates{
+
+    public $x;
+    public $y;
+public function __construct($x, $y){
+
+    $this->x = $x;
+    $this->y = $y;
+
+}
+}
+
+function pin(Coordinates $coordinates){
+// This will out put x
+    echo $coordinates->x;
+
+    //can also use a getter but you'd need to create it in Coordinates class
+    echo $coordinates->x();
+
+}
+function distance(Coordinates $begin, Coordinates $end){
+
+
+    }
+
+
 
 ?>
