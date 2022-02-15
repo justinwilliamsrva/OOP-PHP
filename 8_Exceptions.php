@@ -37,7 +37,7 @@ function add($one, $two)
 //     echo add(2.0, 2.0);
 //     echo "\n";
 // echo add(2.0, -2);
-  echo add(2.0, []);
+//   echo add(2.0, []);
 
 
 // } catch (NotAFloatBro $e) {
@@ -89,18 +89,15 @@ function adding($one, $two)
 
 
 try {
-    echo add(2.0, 2.0);
+    echo adding(2.0, 2.0);
     echo "\n";
-    // echo add(2.0, -2);
-    echo add(2.0, []);
+    echo adding(2.0, -2);
+    // echo adding(2.0, []);
 
 
 
 
-} catch (NotAFloatBro $e) {
+} catch (TeamException $e) {
 
    var_dump($e);
-} catch (NotAPositiveFloatBro $e) {
-
-    var_dump($e);
 }
