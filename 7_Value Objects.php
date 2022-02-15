@@ -13,6 +13,21 @@ public function __construct($age)
     $this->age = $age;
 }
 
+
+
+public function increment(){
+
+    //Mutable
+    // $this->age += 1;
+
+    //Immuatable
+    return new self($this->age + 1);
+}
+public function get(){
+
+    return $this->age;
+}
+
 }
 
 
@@ -38,9 +53,18 @@ $age = new Age(70);
 register("John Doe", $age);
 
 //Throw Exception
-$age = new Age(470);
+// $age = new Age(470);
+// register("John Doe", $age);
+
+//Mutable Object
+$age = new Age(35);
+$age->increment();
 register("John Doe", $age);
 
+//Immutable Object
+$age = new Age(35);
+$newAge = $age->increment();
+register("John Doe", $newAge);
 
 
 
